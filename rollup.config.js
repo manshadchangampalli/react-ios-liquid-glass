@@ -30,7 +30,11 @@ export default [
       }),
       commonjs(),
       terser(),
-      postcss(),
+      postcss({
+        extract: true,
+        inject: true,
+        minimize: true,
+      }),
     ],
     external: ["react", "react-dom"],
   },

@@ -1,11 +1,34 @@
 import React from "react";
 import "./style.css";
 
-export const LiquidGlass = ({ children }: { children: React.ReactNode }) => {
+interface ILiquidGlassProps extends React.HTMLAttributes<HTMLDivElement> {
+    children: React.ReactNode;
+    width?: string;
+    height?: string;
+    borderRadius?: string;
+    blur?: string;
+    brightness?: string;
+    padding?: string;
+    style?: React.CSSProperties;
+}
+
+export const LiquidGlass = ({ children, width, height, borderRadius, blur, brightness, padding, style, ...props }: ILiquidGlassProps) => {
     return (
         <>
-            <div className="liquid-glass__container">{children}</div>
-            <svg style={{ display: "none" }}> 
+            <div
+                style={{
+                    width: width || "auto",
+                    height: height || "auto",
+                    ["--liquid-glass-border-radius" as any]: borderRadius || "20px",
+                    ["--liquid-glass-blur" as any]: blur || "10px",
+                    ["--liquid-glass-brightness" as any]: brightness || "1.1",
+                    ...style,
+                }}
+                className="liquid-glass__container"
+                {...props}>
+                <div style={{ padding: padding || "10px" }}>{children}</div>
+            </div>
+            <svg style={{ display: "none" }}>
                 <filter id="displacementFilter">
                     <feImage
                         preserveAspectRatio="none"
