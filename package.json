@@ -1,0 +1,31 @@
+{
+  "name": "react-liquid-glass",
+  "version": "0.0.1",
+  "description": "react-liquid-glass is a lightweight React + TypeScript library that helps you easily replicate the elegant iOS liquid glass effect (also known as glassmorphism). With built‑in support for blur, transparency, and smooth transitions, this package allows developers to add modern frosted glass UI components to their React applications effortlessly.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "author": "Manshad Changampalli",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/react": "^19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "react": "^19.1.1",
+    "rollup-plugin-dts": "^6.2.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "rollup": "^4.46.2",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
