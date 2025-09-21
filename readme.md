@@ -1,6 +1,6 @@
 # React Liquid Glass Component
 
-A lightweight React component that applies a liquid glass effect to its children, providing a frosted glass aesthetic with customizable properties.
+A <strong style="color: red;">lightweight</strong> React component that applies a liquid glass effect to its children, providing a frosted glass aesthetic with customizable properties.
 
 ![React iOS Liquid Glass Editor](https://via.placeholder.com/800x400/ff6b9d/ffffff?text=React+iOS+Liquid+Glass+Editor)
 
