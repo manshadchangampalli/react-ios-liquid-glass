@@ -1,3 +1,3 @@
 import { LiquidGlass } from "./components/glass-box/GlassBox";
-export { LiquidGlass };
+export default LiquidGlass;
 //# sourceMappingURL=index.d.ts.map
