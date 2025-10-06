@@ -24,8 +24,9 @@ export const LiquidGlass = ({ children, width, height, borderRadius, blur, brigh
                     ["--liquid-glass-brightness" as any]: brightness || "1.1",
                     ...style,
                 }}
+                {...props}
                 className={"liquid-glass__container" + " " + props.className}
-                {...props}>
+            >
                 <div style={{ padding: padding || "10px" }}>{children}</div>
             </div>
             <svg style={{ display: "none" }}>
